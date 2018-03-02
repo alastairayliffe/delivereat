@@ -11,6 +11,18 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "node-fetch": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alastairayliffe/delivereat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alastairayliffe/delivereat/issues"
+  },
+  "homepage": "https://github.com/alastairayliffe/delivereat#readme",
+  "devDependencies": {
     "jest": "^22.3.0"
   }
 }

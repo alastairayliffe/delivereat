@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>foody - product single</title>
+
+    <!-- Styles -->
+    <link href="/static/assets/css/core.min.css" rel="stylesheet">
+    <link href="/static/assets/css/thesaas.min.css" rel="stylesheet">
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/static/assets/img/apple-touch-icon.png">
+    <link rel="icon" href="/static/assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
+      <div class="container">
+        
+        <div class="topbar-left">
+
+        </div>
+
+
+        <div class="topbar-right">
+          <ul class="topbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Samples <i class="fa fa-caret-down"></i></a>
+              <div class="nav-submenu">
+                <a class="nav-link" href="demo-helpato.html">Helpato</a>
+                <a class="nav-link" href="demo-trello.html">Trello</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- END Topbar -->
+
+
+
+    <!-- Header -->
+    <header class="header header-inverse bg-fixed" style="background-image: url(/static/assets/img/bg-food5.jpeg)" data-overlay="8">
+      <div class="container text-center">
+
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2">
+
+            <h1>The Store</h1>
+            <p class="fs-20 opacity-70">text goes in here</p>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Product details
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bb-1">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <img src="/static/assets/img/product-1.png" alt="product">
+
+            </div>
+
+
+            <div class="col-12 col-md-4">
+              <br>
+              <h5 id=name>{{name}}</h5>
+
+              <p>
+                <span class="lead ml-20" id=price>£{{price}}</span>
+              </p>
+
+              <p id=description>{{description}}</p>
+
+       
+
+              <hr>
+
+              <form>
+                <div class="form-group">
+                  <select class="form-control" id=spice>
+                    <option>Select spices</option>
+                    <option>Plain...(ish)</option>
+                    <option>Mango and Lime</option>
+                    <option>Lemon and Herb</option>
+                    <option>Hot</option>
+                    <option>Extra Hot</option>
+                  </select>
+                </div>
+
+                <div class="row">
+                  <div class="col form-group">
+                    <input class="form-control" type="text" placeholder="Quantity" id=quantity>
+                  </div>
+
+                  <div class="col form-group">
+                    <button class="btn btn-block btn-primary"  type="button" id=addToCart>Add to cart</button>    
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <br>
+
+        </div>
+      </section>
+
+    </main>
+    <!-- END Main container -->
+
+
+    <!-- Scripts -->
+    <script src="/static/assets/js/core.min.js"></script>
+    <script src="/static/assets/js/thesaas.min.js"></script>
+    <script src="/static/assets/js/script.js"></script>
+    <script src="/static/shop-single.js"></script>
+
+  </body>
+</html>

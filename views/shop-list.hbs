@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>foody - product list</title>
+
+    <!-- Styles -->
+    <link href="/static/assets/css/core.min.css" rel="stylesheet">
+    <link href="/static/assets/css/thesaas.min.css" rel="stylesheet">
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/static/assets/img/apple-touch-icon.png">
+    <link rel="icon" href="/static/assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Topbar -->
+    <nav class="topbar topbar-inverse topbar-expand-md topbar-sticky">
+      <div class="container">
+        
+        <div class="topbar-left">
+
+        </div>
+
+
+        <div class="topbar-right">
+          <ul class="topbar-nav nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Samples <i class="fa fa-caret-down"></i></a>
+              <div class="nav-submenu">
+                <a class="nav-link" href="demo-helpato.html">Helpato</a>
+                <a class="nav-link" href="demo-trello.html">Trello</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- END Topbar -->
+
+
+
+    <!-- Header -->
+    <header class="header header-inverse bg-fixed" style="background-image: url(/static/assets/img/bg-food5.jpeg)" data-overlay="8">
+      <div class="container text-center">
+
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2">
+
+            <h1>Menu</h1>
+            <p class="fs-20 opacity-70">yummy dishes</p>
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Product list
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <h2>Starters</h2>
+          <div class="row gap-y">
+          
+          {{#each starters}}
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <a class="shop-item" href="http://localhost:8080/shop-single?menu=starters&id={{@index}}">
+                <div class="item-details">
+                  <div>
+                    <h5>{{{name}}}</h5>
+                    <p>{{{description}}}</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">£</span>{{{price}}}</div>
+                </div>
+                <img src="/static/assets/img/product-1.png" alt="product">
+              </a>
+            </div> 
+
+           {{/each}}
+
+          <h2>Mains</h2>
+          <div class="row gap-y">
+          
+          {{#each mains}}
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <a class="shop-item" href="http://localhost:8080/shop-single?menu=mains&id={{@index}}">
+                <div class="item-details">
+                  <div>
+                    <h5 >{{{name}}}</h5>
+                    <p>{{{description}}}</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">£</span>{{{price}}}</div>
+                </div>
+                <img src="/static/assets/img/product-1.png" alt="product">
+              </a>
+            </div> 
+
+           {{/each}}
+
+          <h2>Deserts</h2>
+          <div class="row gap-y">
+          
+          {{#each deserts}}
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <a class="shop-item"  href="http://localhost:8080/shop-single?menu=deserts&id={{@index}}">
+                <div class="item-details">
+                  <div>
+                    <h5>{{{name}}}</h5>
+                    <p>{{{description}}}</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">£</span>{{{price}}}</div>
+                </div>
+                <img src="/static/assets/img/product-1.png" alt="product">
+              </a>
+            </div> 
+
+           {{/each}}
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    <!-- END Main container -->
+
+    <!-- Scripts -->
+    <script src="/static/assets/js/core.min.js"></script>
+    <script src="/static/assets/js/thesaas.min.js"></script>
+    <script src="/static/assets/js/script.js"></script>
+
+
+  </body>
+</html>
